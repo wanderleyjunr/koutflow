@@ -1,15 +1,16 @@
 'use client';
 
-import logoImg from '@public/logo-short.svg';
+import logoImgKt from '@public/apple-icon.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Title } from '@/components/ui/text';
+import { Title, Text } from '@/components/ui/text';
 import { Button } from '@/components/ui/button';
-import { PiArrowLeftBold } from 'react-icons/pi';
+import { PiAppleLogo, PiArrowLeftBold } from 'react-icons/pi';
 import { FcGoogle } from 'react-icons/fc';
-import { BsFacebook } from 'react-icons/bs';
 import OrSeparation from './or-separation';
 import cn from '@/utils/class-names';
+import toast from 'react-hot-toast';
+
 
 export default function AuthWrapperThree({
   children,
@@ -24,6 +25,14 @@ export default function AuthWrapperThree({
   isSignIn?: boolean;
   className?: string;
 }) {
+
+  function handleSignIn() {
+    toast.success(
+      <Text>
+        Solicitou Entrar na conta{' '}
+      </Text>
+    );
+  }
   return (
     <>
       <div className="relative flex min-h-screen w-full flex-col justify-center bg-gradient-to-tr from-[#136A8A] to-[#267871] p-4 md:p-12 lg:p-28">
@@ -32,7 +41,7 @@ export default function AuthWrapperThree({
           className="mb:pb-3 start-4 z-10 flex items-center justify-center pb-6 pt-3 text-sm font-medium text-white/80 hover:text-white md:absolute md:top-1/2 md:-translate-y-1/2 md:rounded-full "
         >
           <PiArrowLeftBold />
-          <span className="-mt-px ms-1 font-lexend">Back to home</span>
+          <span className="-mt-px ms-1 font-lexend">Voltar para início</span>
         </Link>
         <div
           className={cn(
@@ -42,7 +51,7 @@ export default function AuthWrapperThree({
         >
           <div className="flex flex-col items-center">
             <Link href={'/'} className="mb-7 inline-block max-w-[64px] lg:mb-9">
-              <Image src={logoImg} alt="Isomorphic" className="dark:invert" />
+            <Image src={logoImgKt} alt="Koutflow" width={35} height={10}/> 
             </Link>
             <Title
               as="h2"
@@ -53,18 +62,31 @@ export default function AuthWrapperThree({
           </div>
           {isSocialLoginActive && (
             <>
-              <div className="flex flex-col gap-4 pb-6 md:flex-row md:gap-6 md:pb-7">
-                <Button className="h-11 w-full" variant="outline">
-                  <BsFacebook className="me-2 h-5 w-5 shrink-0 text-primary" />
-                  <span className="truncate">Signin With Facebook</span>
-                </Button>
-                <Button variant="outline" className="h-11 w-full">
-                  <FcGoogle className="me-2 h-5 w-5 shrink-0" />
-                  <span className="truncate">Signin With Google</span>
-                </Button>
-              </div>
+              <div className="grid grid-cols-1 gap-4 pb-5 md:grid-cols-2 md:pb-6 xl:gap-5 xl:pb-7">
+                  <Button
+                    onClick={() =>
+                      // it should be signIn('apple')
+                      handleSignIn()
+                    }
+                    className="h-11 w-full"
+                  >
+                    <PiAppleLogo className="me-2 h-4 w-4 shrink-0" />
+                    <span className="truncate">Continuar com Apple</span>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={() =>
+                      // it should be signIn('google')
+                      handleSignIn()
+                    }
+                    className="h-11 w-full"
+                  >
+                    <FcGoogle className="me-2 h-4 w-4 shrink-0" />
+                    <span className="truncate">Continuar com Google</span>
+                  </Button>
+                </div>
               <OrSeparation
-                title={`Or, Sign ${isSignIn ? 'in' : 'up'} with your email`}
+                title={`Ou, ${isSignIn ? 'Entre na sua conta' : 'Crie sua conta'} com seu email`}
                 isCenter
                 className="mb-4"
               />
