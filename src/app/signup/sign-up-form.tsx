@@ -132,7 +132,7 @@ export default function SignUpForm() {
         )}
       </Form>
       <Text className="mt-6 text-center leading-loose text-gray-500 lg:mt-8 ">
-       Ja possui uma conta!{' '}
+        Ja possui uma conta!{' '}
         <Link
           href={routes.auth.signIn}
           className="font-semibold text-gray-700 transition-colors hover:text-blue"

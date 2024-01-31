@@ -70,7 +70,7 @@ export const getColumns = ({
 }: Columns) => [
   {
     title: (
-      <div className="flex whitespace-nowrap items-center gap-3 ps-2">
+      <div className="flex items-center gap-3 whitespace-nowrap ps-2">
         <Checkbox
           title={'Select All'}
           onChange={handleSelectAll}

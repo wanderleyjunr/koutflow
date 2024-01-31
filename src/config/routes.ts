@@ -96,11 +96,7 @@ export const routes = {
     // forgot password
     forgotPassword: '/forgotpassword',
     // OTP
-    otp1: '/auth/otp-1',
-    otp2: '/auth/otp-2',
-    otp3: '/auth/otp-3',
-    otp4: '/auth/otp-4',
-    otp5: '/auth/otp-5',
+    otp: '/otp',
   },
   signIn: '/signin',
 };

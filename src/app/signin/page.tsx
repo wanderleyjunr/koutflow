@@ -1,6 +1,6 @@
 import SignInForm from './sign-in-form';
 import { metaObject } from '@/config/site.config';
-import AuthWrapperThree from '../shared/auth-layout/auth-wrapper-three';
+import AuthWrapperFour from '../shared/auth-layout/auth-wrapper-four';
 
 export const metadata = {
   ...metaObject('Entrar'),
@@ -8,19 +8,19 @@ export const metadata = {
 
 export default function SignIn() {
   return (
-    <AuthWrapperThree
-    title={
-      <>
-        <span className="bg-gradient-to-r from-[#136A8A] to-[#267871] bg-clip-text text-transparent">
-          Entrar na Conta
-        </span>{' '}
-        !
-      </>
-    }
-    isSignIn
-    isSocialLoginActive={true}
-  >
-    <SignInForm />
-  </AuthWrapperThree>
+    <AuthWrapperFour
+      title={
+        <>
+          <span className="bg-gradient-to-r from-[#136A8A] to-[#267871] bg-clip-text text-transparent">
+            Entrar na Conta
+          </span>{' '}
+          !
+        </>
+      }
+      isSignIn
+      isSocialLoginActive={true}
+    >
+      <SignInForm />
+    </AuthWrapperFour>
   );
 }

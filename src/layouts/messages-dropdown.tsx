@@ -131,7 +131,7 @@ function MessagesList({
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   return (
-    <div className="w-[320px] text-left rtl:text-right sm:w-[360px] 2xl:w-[420px]">
+    <div className="w-[320px] text-left sm:w-[360px] 2xl:w-[420px] rtl:text-right">
       <div className="mb-2 flex items-center justify-between ps-6">
         <Title as="h5">Messages</Title>
         <Link

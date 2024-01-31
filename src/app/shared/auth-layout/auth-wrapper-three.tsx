@@ -11,7 +11,6 @@ import OrSeparation from './or-separation';
 import cn from '@/utils/class-names';
 import toast from 'react-hot-toast';
 
-
 export default function AuthWrapperThree({
   children,
   title,
@@ -25,13 +24,8 @@ export default function AuthWrapperThree({
   isSignIn?: boolean;
   className?: string;
 }) {
-
   function handleSignIn() {
-    toast.success(
-      <Text>
-        Solicitou Entrar na conta{' '}
-      </Text>
-    );
+    toast.success(<Text>Solicitou Entrar na conta </Text>);
   }
   return (
     <>
@@ -51,7 +45,7 @@ export default function AuthWrapperThree({
         >
           <div className="flex flex-col items-center">
             <Link href={'/'} className="mb-7 inline-block max-w-[64px] lg:mb-9">
-            <Image src={logoImgKt} alt="Koutflow" width={35} height={10}/> 
+              <Image src={logoImgKt} alt="Koutflow" width={35} height={10} />
             </Link>
             <Title
               as="h2"
@@ -63,30 +57,32 @@ export default function AuthWrapperThree({
           {isSocialLoginActive && (
             <>
               <div className="grid grid-cols-1 gap-4 pb-5 md:grid-cols-2 md:pb-6 xl:gap-5 xl:pb-7">
-                  <Button
-                    onClick={() =>
-                      // it should be signIn('apple')
-                      handleSignIn()
-                    }
-                    className="h-11 w-full"
-                  >
-                    <PiAppleLogo className="me-2 h-4 w-4 shrink-0" />
-                    <span className="truncate">Continuar com Apple</span>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    onClick={() =>
-                      // it should be signIn('google')
-                      handleSignIn()
-                    }
-                    className="h-11 w-full"
-                  >
-                    <FcGoogle className="me-2 h-4 w-4 shrink-0" />
-                    <span className="truncate">Continuar com Google</span>
-                  </Button>
-                </div>
+                <Button
+                  onClick={() =>
+                    // it should be signIn('apple')
+                    handleSignIn()
+                  }
+                  className="h-11 w-full"
+                >
+                  <PiAppleLogo className="me-2 h-4 w-4 shrink-0" />
+                  <span className="truncate">Continuar com Apple</span>
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={() =>
+                    // it should be signIn('google')
+                    handleSignIn()
+                  }
+                  className="h-11 w-full"
+                >
+                  <FcGoogle className="me-2 h-4 w-4 shrink-0" />
+                  <span className="truncate">Continuar com Google</span>
+                </Button>
+              </div>
               <OrSeparation
-                title={`Ou, ${isSignIn ? 'Entre na sua conta' : 'Crie sua conta'} com seu email`}
+                title={`Ou, ${
+                  isSignIn ? 'Entre na sua conta' : 'Crie sua conta'
+                } com seu email`}
                 isCenter
                 className="mb-4"
               />

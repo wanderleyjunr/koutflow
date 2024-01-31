@@ -139,7 +139,7 @@ export default function RoleCard({
         label="Edit Role"
         icon={<UserCog className="h-5 w-5" />}
         view={<EditRole />}
-        className="items-center gap-1 text-gray-800 lg:mt-6 @lg:w-full"
+        className="items-center gap-1 text-gray-800 @lg:w-full lg:mt-6"
       />
     </div>
   );

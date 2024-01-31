@@ -3,8 +3,7 @@ import UnderlineShape from '@/components/shape/underline';
 import Image from 'next/image';
 import AuthWrapperOne from '@/app/shared/auth-layout/auth-wrapper-one';
 
-import AuthWrapperThree from '@/app/shared/auth-layout/auth-wrapper-three';
-
+import AuthWrapperThree from '@/app/shared/auth-layout/auth-wrapper-four';
 
 export default function SignIn() {
   return (
@@ -39,17 +38,15 @@ export default function SignIn() {
     //   <ForgetPasswordForm />
     // </AuthWrapperOne>
     <AuthWrapperThree
-
-    title={
-          <>
-            Enviar link para redefinir{' '}
-            <span className="relative inline-block">
-              senha!
-              <UnderlineShape className="absolute -bottom-2 end-0 h-2.5 w-28 text-blue xl:-bottom-1.5 xl:w-36" />
-            </span>
-          </>
-        }
-       
+      title={
+        <>
+          Enviar link para redefinir{' '}
+          <span className="relative inline-block">
+            senha!
+            <UnderlineShape className="absolute -bottom-2 end-0 h-2.5 w-28 text-blue xl:-bottom-1.5 xl:w-36" />
+          </span>
+        </>
+      }
     >
       <ForgetPasswordForm />
     </AuthWrapperThree>

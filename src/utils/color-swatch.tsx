@@ -13,7 +13,7 @@ export default function ColorSwatch({ colors }: { colors?: ProductColor[] }) {
         {colors?.map((color) => (
           <span
             className={cn(
-              "relative m-1 h-5 w-5 cursor-pointer rounded-full border-white before:absolute before:start-1/2 before:top-1/2 before:h-[22px] before:w-[22px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:content-[''] ltr:before:-translate-x-1/2 rtl:before:translate-x-1/2 dark:border-gray-200",
+              "relative m-1 h-5 w-5 cursor-pointer rounded-full border-white before:absolute before:start-1/2 before:top-1/2 before:h-[22px] before:w-[22px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:content-[''] dark:border-gray-200 ltr:before:-translate-x-1/2 rtl:before:translate-x-1/2",
               activeColor === color &&
                 'border-4 before:border before:border-gray-900'
             )}

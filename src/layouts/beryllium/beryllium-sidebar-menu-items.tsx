@@ -393,23 +393,23 @@ export const berylliumSidebarMenuItems = [
     dropdownItems: [
       {
         name: 'Modern Sign up',
-        href: routes.auth.signUp1,
+        href: routes.auth.signUp,
       },
       {
         name: 'Vintage Sign up',
-        href: routes.auth.signUp2,
+        href: routes.auth.signUp,
       },
       {
         name: 'Trendy Sign up',
-        href: routes.auth.signUp3,
+        href: routes.auth.signUp,
       },
       {
         name: 'Elegant Sign up',
-        href: routes.auth.signUp4,
+        href: routes.auth.signUp,
       },
       {
         name: 'Classic Sign up',
-        href: routes.auth.signUp5,
+        href: routes.auth.signUp,
       },
     ],
   },
@@ -420,23 +420,23 @@ export const berylliumSidebarMenuItems = [
     dropdownItems: [
       {
         name: 'Modern Sign in',
-        href: routes.auth.signIn1,
+        href: routes.auth.signIn,
       },
       {
         name: 'Vintage Sign in',
-        href: routes.auth.signIn2,
+        href: routes.auth.signIn,
       },
       {
         name: 'Trendy Sign in',
-        href: routes.auth.signIn3,
+        href: routes.auth.signIn,
       },
       {
         name: 'Elegant Sign in',
-        href: routes.auth.signIn4,
+        href: routes.auth.signIn,
       },
       {
         name: 'Classic Sign in',
-        href: routes.auth.signIn5,
+        href: routes.auth.signIn,
       },
     ],
   },
@@ -447,23 +447,23 @@ export const berylliumSidebarMenuItems = [
     dropdownItems: [
       {
         name: 'Modern Forgot password',
-        href: routes.auth.forgotPassword1,
+        href: routes.auth.forgotPassword,
       },
       {
         name: 'Vintage Forgot password',
-        href: routes.auth.forgotPassword2,
+        href: routes.auth.forgotPassword,
       },
       {
         name: 'Trendy Forgot password',
-        href: routes.auth.forgotPassword3,
+        href: routes.auth.forgotPassword,
       },
       {
         name: 'Elegant Forgot password',
-        href: routes.auth.forgotPassword4,
+        href: routes.auth.forgotPassword,
       },
       {
         name: 'Classic Forgot password',
-        href: routes.auth.forgotPassword5,
+        href: routes.auth.forgotPassword,
       },
     ],
   },
@@ -474,23 +474,23 @@ export const berylliumSidebarMenuItems = [
     dropdownItems: [
       {
         name: 'Modern OTP page',
-        href: routes.auth.otp1,
+        href: routes.auth.otp,
       },
       {
         name: 'Vintage OTP page',
-        href: routes.auth.otp2,
+        href: routes.auth.otp,
       },
       {
         name: 'Trendy OTP page',
-        href: routes.auth.otp3,
+        href: routes.auth.otp,
       },
       {
         name: 'Elegant OTP page',
-        href: routes.auth.otp4,
+        href: routes.auth.otp,
       },
       {
         name: 'Classic OTP page',
-        href: routes.auth.otp5,
+        href: routes.auth.otp,
       },
     ],
   },

@@ -1,26 +1,26 @@
 import SignUpForm from './sign-up-form';
 import { metaObject } from '@/config/site.config';
-import AuthWrapperThree from '../shared/auth-layout/auth-wrapper-three';
+import AuthWrapperFour from '../shared/auth-layout/auth-wrapper-four';
 
 export const metadata = {
   ...metaObject('Criar Conta'),
 };
 
 export default function SignUp() {
-
   return (
-    <AuthWrapperThree
+    <AuthWrapperFour
       title={
         <>
           <span className="bg-gradient-to-r from-[#136A8A] to-[#267871] bg-clip-text text-transparent">
             Cadastre-se
-          </span>{' '}<br/>
+          </span>{' '}
+          <br />
           Rápido, fácil e simples!
         </>
       }
       isSocialLoginActive={true}
     >
       <SignUpForm />
-    </AuthWrapperThree>
+    </AuthWrapperFour>
   );
 }

@@ -68,7 +68,7 @@ export function CollapsibleMenu({
                 )}
               />
               {item.subMenuItems && (
-                <ul className="invisible absolute -right-[calc(100%_+_24px)] top-0 min-w-[200px] scale-75 rounded-md border border-gray-200 bg-white p-2 opacity-0 shadow-md  duration-200 after:absolute after:-left-[22px] after:-top-0 after:h-9 after:w-7 group-hover/parent:visible group-hover/parent:scale-100 group-hover/parent:opacity-100 rtl:right-[calc(100%_+_24px)] rtl:after:-right-[22px] dark:bg-gray-100">
+                <ul className="invisible absolute -right-[calc(100%_+_24px)] top-0 min-w-[200px] scale-75 rounded-md border border-gray-200 bg-white p-2 opacity-0 shadow-md  duration-200 after:absolute after:-left-[22px] after:-top-0 after:h-9 after:w-7 group-hover/parent:visible group-hover/parent:scale-100 group-hover/parent:opacity-100 dark:bg-gray-100 rtl:right-[calc(100%_+_24px)] rtl:after:-right-[22px]">
                   {item.subMenuItems.map((subItem, subIndex) => {
                     const isActive = subItem.href === pathname;
                     return (

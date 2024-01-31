@@ -33,7 +33,7 @@ export const metaObject = (
       url: 'https://koutflow.com',
       siteName: 'Koutflow Plataforma', // https://developers.google.com/search/docs/appearance/site-names
       images: {
-        url: 'https://s3.amazonaws.com/redqteam.com/isomorphic-furyroad/itemdep/isobanner.png',//#modifica
+        url: 'https://s3.amazonaws.com/redqteam.com/isomorphic-furyroad/itemdep/isobanner.png', //#modifica
         width: 1200,
         height: 630,
       },

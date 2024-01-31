@@ -34,7 +34,7 @@ export default function ComingSoonPage() {
       <Image
         src={ComingSoonTwoImg}
         alt="coming soon"
-        className="fixed start-0 top-0 hidden w-28 rtl:rotate-90 dark:invert 3xl:inline-block 3xl:w-32"
+        className="fixed start-0 top-0 hidden w-28 dark:invert 3xl:inline-block 3xl:w-32 rtl:rotate-90"
       />
       <div className="end-10 top-1/2 lg:absolute lg:-translate-y-1/2 xl:end-[10%] 3xl:end-[15%]">
         <Image

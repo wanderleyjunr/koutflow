@@ -260,82 +260,82 @@ export const pageLinks = [
   // label end
   {
     name: 'Modern Sign Up',
-    href: routes.auth.signUp1,
+    href: routes.auth.signUp,
   },
   {
     name: 'Vintage Sign Up',
-    href: routes.auth.signUp2,
+    href: routes.auth.signUp,
   },
   {
     name: 'Trendy Sign Up',
-    href: routes.auth.signUp3,
+    href: routes.auth.signUp,
   },
   {
     name: 'Elegant Sign Up',
-    href: routes.auth.signUp4,
+    href: routes.auth.signUp,
   },
   {
     name: 'Classic Sign Up',
-    href: routes.auth.signUp5,
+    href: routes.auth.signUp,
   },
   {
     name: 'Modern Sign In',
-    href: routes.auth.signIn1,
+    href: routes.auth.signIn,
   },
   {
     name: 'Vintage Sign In',
-    href: routes.auth.signIn2,
+    href: routes.auth.signIn,
   },
   {
     name: 'Trendy Sign In',
-    href: routes.auth.signIn3,
+    href: routes.auth.signIn,
   },
   {
     name: 'Elegant Sign In',
-    href: routes.auth.signIn4,
+    href: routes.auth.signIn,
   },
   {
     name: 'Classic Sign In',
-    href: routes.auth.signIn5,
+    href: routes.auth.signIn,
   },
   {
     name: 'Modern Forgot Password',
-    href: routes.auth.forgotPassword1,
+    href: routes.auth.forgotPassword,
   },
   {
     name: 'Vintage Forgot Password',
-    href: routes.auth.forgotPassword2,
+    href: routes.auth.forgotPassword,
   },
   {
     name: 'Trendy Forgot Password',
-    href: routes.auth.forgotPassword3,
+    href: routes.auth.forgotPassword,
   },
   {
     name: 'Elegant Forgot Password',
-    href: routes.auth.forgotPassword4,
+    href: routes.auth.forgotPassword,
   },
   {
     name: 'Classic Forgot Password',
-    href: routes.auth.forgotPassword5,
+    href: routes.auth.forgotPassword,
   },
   {
     name: 'Modern OTP Page',
-    href: routes.auth.otp1,
+    href: routes.auth.otp,
   },
   {
     name: 'Vintage OTP Page',
-    href: routes.auth.otp2,
+    href: routes.auth.otp,
   },
   {
     name: 'Trendy OTP Page',
-    href: routes.auth.otp3,
+    href: routes.auth.otp,
   },
   {
     name: 'Elegant OTP Page',
-    href: routes.auth.otp4,
+    href: routes.auth.otp,
   },
   {
     name: 'Classic OTP Page',
-    href: routes.auth.otp5,
+    href: routes.auth.otp,
   },
 ];

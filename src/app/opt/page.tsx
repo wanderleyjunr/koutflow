@@ -1,6 +1,6 @@
 import { Title, Text } from '@/components/ui/text';
 import OtpForm from './otp-form';
-import AuthWrapperThree from '@/app/shared/auth-layout/auth-wrapper-three';
+import AuthWrapperThree from '@/app/shared/auth-layout/auth-wrapper-four';
 
 export default function ForgotPassword() {
   return (
@@ -15,7 +15,7 @@ export default function ForgotPassword() {
       className="md:px-20 lg:px-36 lg:py-40"
     >
       <Text className="pb-7 text-center text-[15px] leading-[1.85] text-gray-700 md:text-base md:!leading-loose lg:-mt-1">
-      Enviamos um código para seu e-mail. Por favor insira abaixo.
+        Enviamos um código para seu e-mail. Por favor insira abaixo.
       </Text>
       <OtpForm />
     </AuthWrapperThree>

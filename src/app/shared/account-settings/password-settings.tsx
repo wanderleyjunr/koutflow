@@ -154,7 +154,7 @@ function LoggedDevices({ className }: { className?: string }) {
             </Title>
             <Text
               as="span"
-              className="relative hidden rounded-md border border-gray-200 py-1.5 pe-2.5 ps-5 text-xs font-semibold text-gray-900 before:absolute before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-green ltr:before:left-2.5 rtl:before:right-2.5 sm:block"
+              className="relative hidden rounded-md border border-gray-200 py-1.5 pe-2.5 ps-5 text-xs font-semibold text-gray-900 before:absolute before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-green sm:block ltr:before:left-2.5 rtl:before:right-2.5"
             >
               Active Now
             </Text>
@@ -166,7 +166,7 @@ function LoggedDevices({ className }: { className?: string }) {
           </div>
           <Text
             as="span"
-            className="relative mt-2 inline-block rounded-md border border-gray-200 py-1.5 pe-2.5 ps-5 text-xs font-semibold text-gray-900 before:absolute before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-green ltr:before:left-2.5 rtl:before:right-2.5 sm:hidden"
+            className="relative mt-2 inline-block rounded-md border border-gray-200 py-1.5 pe-2.5 ps-5 text-xs font-semibold text-gray-900 before:absolute before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-green sm:hidden ltr:before:left-2.5 rtl:before:right-2.5"
           >
             Active Now
           </Text>

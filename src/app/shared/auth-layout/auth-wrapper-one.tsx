@@ -65,7 +65,7 @@ export default function AuthWrapperOne({
             <div className="mb-7 px-6 pt-3 text-center md:pt-0 lg:px-0 lg:text-start xl:mb-8 2xl:mb-10">
               <Link
                 href={'/'}
-                className="mb-6 inline-flex items-center max-w-[168px] xl:mb-8"
+                className="mb-6 inline-flex max-w-[168px] items-center xl:mb-8"
               >
                 {/*<Image src={logoImg} alt="Koutflow" />
                 <Image
@@ -73,14 +73,10 @@ export default function AuthWrapperOne({
                   alt="Koutflow"
                   className="ps-2.5 dark:invert"
                 />*/}
-              <Image src={logoImgKt} alt="Koutflow" width={35} height={10}/> 
-              <Title
-                as="h2"
-                className="text-[22px] ps-2.5 dark:invert"
-              >
-               Koutflow
-              </Title>
-
+                <Image src={logoImgKt} alt="Koutflow" width={35} height={10} />
+                <Title as="h2" className="ps-2.5 text-[22px] dark:invert">
+                  Koutflow
+                </Title>
               </Link>
               <Title
                 as="h2"
